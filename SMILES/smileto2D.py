@@ -25,7 +25,11 @@ for smilepath in DIRPATH:
             print("output_file is :",output_file)
             print("smiles is :",smiles)
             print("\n")
+            smiles_to_image(smiles,'generated_structures/'+output_file)
+            '''
             try:
                 smiles_to_image(smiles,'generated_structures/'+output_file)
             except:
+                "Failed to convert file into image. Check if pillow is installed."
                 pass
+            '''
